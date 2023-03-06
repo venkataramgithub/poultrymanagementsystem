@@ -1,0 +1,81 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: 'Poppins',sans-serif;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.container{
+	background: white;
+	height: 450px;
+	margin-right: 100px;
+	margin-top: 40px;
+	padding: 20px;
+}
+a{
+	font-size: 30px;
+	color:;
+	float: right;
+	text-decoration: none;
+	cursor: pointer;
+	margin-right:50px;
+}
+form{
+	margin-top:20px;
+	margin-left: 150px;
+	padding: 10px;
+}
+form input{
+	width:70%;
+	height: 35px;
+	padding:10px;
+	font-size: 18px;
+	border-radius: 4px;
+	border:1px solid rgba(0, 0, 0,0.4);
+	outline: none;
+}
+form input:focus{
+	outline: none;
+	box-shadow: 0px 0px 2px 2px rgba(100,250,0,1);
+}
+form button{
+	width:5%;
+	padding:6px;
+	font-size: 19px;
+	outline: none;
+	border:1px solid rgba(0, 0, 0,0.4);
+	border-radius: 4px;
+
+}
+form button:focus{
+	background: #14abac;
+	color: white;
+}
+.table-form{
+	width:80%;
+	height: 300px;
+	overflow-y:auto;
+	margin:10px 100px;
+	margin-bottom: 20px;
+	background: #ddd;
+	border:1px solid rgba(0, 0, 0,.3);
+}
+table{
+	width:100%;
+	padding:4px;
+	text-align: center;
+}
+table tr{
+	padding:2px;
+	border-bottom: 1px solid rgba(0, 0, 0,0.4);
+}
+thead tr{
+	background: #14abac;
+	color: #fff;
+}
+th,td{
+	padding:5px;
+}
+tr:nth-of-type(even){
+	background:#fff;
+}

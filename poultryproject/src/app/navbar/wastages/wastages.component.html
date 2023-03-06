@@ -1,0 +1,23 @@
+<body>
+	<section class="container">
+		<a routerLink="/navbar/wastagestable">&times;</a>
+		<div class="workers-form">
+			<p>Add Daily Wastages</p>
+			<form method="post" [formGroup]="formdata" (ngSubmit)="addwastages(formdata.value)">
+				<div class="form-group">
+					<label>chicken</label>
+					<input type="text" name="chicken"formControlName="chicken" autocomplete="off">
+				</div>
+				<div class="form-group">
+					<label>Eggs</label>
+					<input type="text" name="phone" formControlName="egg" autocomplete="off">
+				</div>
+				<div class="form-group">
+					<label>date</label>
+					<input type="date" name="state" formControlName="date" autocomplete="off">
+				</div>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</section>
+</body>

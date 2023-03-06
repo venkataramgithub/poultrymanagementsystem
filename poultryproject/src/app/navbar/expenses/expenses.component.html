@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>poultry management system</title>
+</head>
+<body>
+	<section class="container">
+		<div class="workers-form">
+			<p>Add Expenses</p>
+			<form method="post" [formGroup]="formdata" (ngSubmit)="addexpense(formdata.value)">
+				<div class="form-group">
+					<label>Name</label>
+					<input type="text" name="name" formControlName="name" autocomplete="off" required>
+				</div>
+				<div class="form-group">
+					<label>Expense Name</label>
+					<input type="text" name="expensename" formControlName="expensename" autocomplete="off" required>
+				</div>
+				<div class="form-group">
+					<label>Amount</label>
+					<input type="text" name="amount" formControlName="amount" autocomplete="off" required>
+				</div>
+				<div class="form-group">
+					<label>Date</label>
+					<input type="date" name="date" formControlName="date" autocomplete="off" required>
+				</div>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</section>
+</body>
+</html>

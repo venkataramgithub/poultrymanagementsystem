@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>poultry management system</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+	<div class="container">
+		<i class="fas fa-user-circle"></i>
+		<form method="post" [formGroup]="formdata" (ngSubmit)="PoultryLogin(formdata.value)">
+			<div class="form-group">
+				<input type="text" name="id" formControlName="id">
+				<label>Admin ID</label>
+			</div>
+			<div class="form-group">
+				<input type="password" name="Password" formControlName="Password">
+				<label>Password</label>
+			</div>
+			<button type="submit">Login</button>
+		</form>
+	</div>
+</body>
+</html>

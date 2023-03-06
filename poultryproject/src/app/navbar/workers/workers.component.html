@@ -1,0 +1,31 @@
+<body>
+	<section class="container">
+		<a routerLink="/navbar/staffmanagement">&times;</a>
+		<div class="workers-form">
+			<p>Add Workers</p>
+			<form method="post" [formGroup]="formdata" (ngSubmit)="addworker(formdata.value)">
+				<div class="form-group">
+					<label>Worker ID</label>
+					<input type="text" name="wid" formControlName="wid" autocomplete="off" required>
+				</div>
+				<div class="form-group">
+					<label>Name</label>
+					<input type="text" name="name" formControlName="name" autocomplete="off" required>
+				</div>
+				<div class="form-group">
+					<label>Phone NO</label>
+					<input type="tel" name="phone" formControlName="phone" autocomplete="off" required>
+				</div>
+				<div class="form-group">
+					<label>Salary</label>
+					<input type="text" name="salary" formControlName="salary" autocomplete="off" required>
+				</div>
+				<div class="form-group">
+					<label>Worker Type</label>
+					<input type="text" name="worktype" formControlName="worktype" autocomplete="off" required>
+				</div>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</section>
+</body>

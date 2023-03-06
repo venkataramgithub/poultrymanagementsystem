@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Mukta:wght@300&family=Roboto:ital,wght@1,100&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family:'Mukta',sans-serif ;
+}
+.container{
+  background-image:url("../../../assets/staffm.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:550px;
+  padding-bottom: 30px;
+  overflow-x: hidden;
+  padding-top: 15px;
+  align-content: center;
+  align-items: center;
+  padding-left: 100px;
+
+}
+.container a{
+  font-size: 18px;
+  color:white;
+  background:indianred;
+  float: right;
+  margin-right: 50px;
+  padding:3px;
+  border-radius:2px;
+}
+.container form{
+  width:fit-content;
+  padding:10px;
+}
+form input{
+  width:700px;
+  height: 30px;
+  font-size: 18px;
+  border:1px solid rgba(0, 0, 0,.4);
+  outline: none;
+}
+form button{
+  padding:0px 10px;
+ border:1px solid rgba(0, 0, 0,.4);
+ outline: none;
+ font-size: 18px;
+ color:#14abac;
+ background: white;
+}
+.table-form{
+  background: white;
+  display: block;
+   width:800px;
+  height: 350px;
+  overflow-y:scroll;
+}
+.table-form::-webkit-scrollbar{
+  width:2px;
+}
+.table-form table{
+  width:800px;
+  text-align: center;
+}
+table th, table td{
+  padding:4px 10px;
+}
+table thead{
+  background: #14abac;
+  color:white;
+  width: 100%;
+}

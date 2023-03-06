@@ -1,0 +1,29 @@
+<body>
+	<section class="container">
+		<a routerLink="/navbar/dashboard">&times;</a>
+		<form method="post" [formGroup]="formdata" (ngSubmit)="searchform(formdata.value)">
+			<input type="search" name="expensesearch" formControlName="expensesearch" placeholder="Search here ....">
+			<button><i class="fas fa-search"></i></button>
+		</form>
+		<div class="table-form">
+			<table>
+				<thead>
+				<tr>
+					<th>Name</th>
+					<th>Expense name</th>
+					<th>Amount</th>
+					<th>Date</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let expense of expenses$">
+						<td>{{expense.name}}</td>
+						<td>{{expense.expensename}}</td>
+						<td>{{expense.amount}}</td>
+						<td>{{expense.date | date:'fullDate'}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+</body>

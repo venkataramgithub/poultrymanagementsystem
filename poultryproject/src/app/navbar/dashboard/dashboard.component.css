@@ -1,0 +1,106 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: 'Poppins',sans-serif;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.container {
+	background: #eee;
+	height:auto;
+	overflow-x: hidden;
+	background-image:linear-gradient(to left, rgba(255,255,255,0.6), rgba(255, 255, 255,.6)), url("../../../assets/chicken2.jpeg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding:10px 20px;
+}
+.daily-prices{
+	display: block;
+	padding: 10px;
+	text-align: center;
+	border-radius: 4px;
+}
+.daily-prices p{
+	font-size: 25px;
+	color:#ab14ac;
+	margin-bottom: 15px;
+}
+.row{
+	display: flex;
+	justify-content:center;
+	background:transparent;
+}
+.row p{
+	font-size: 22px;
+	color:rgba(0, 0, 0,0.5);
+}
+.row p span{
+	margin-left: 4px;
+}
+.row p i{
+	margin-right:5px;
+}
+.availability{
+	margin:15px 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+	gap:15px;
+}
+.total-customers{
+	background: white;
+	margin:10px;
+	border:1px solid rgba(0, 0, 0,0.3);
+	border-radius:4px;
+}
+.cus-img{
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.card-1{
+	background:#ff0404;
+}
+.card-2{
+	background:green;
+}
+.card-3{
+	background:#0404ff;
+}
+.card-4{
+	background:#ab14ac;
+}
+.card-5{
+	background:darkcyan;
+}
+.card-6{
+	background:darkorange;
+}
+.cus-img span{
+	text-align: center;
+	font-size: 70px;
+	color:#fff;
+	margin:10px;
+}
+.cus-img .column{
+	margin:10px;
+	color:#fff;
+	padding:10px;
+	text-align: center;
+}
+.column p{
+	margin-bottom: 10px;
+}
+.column p span{
+	font-size: 17px;
+}
+.show-all{
+	display: flex;
+	justify-content:space-betweeen;
+	margin:10px;
+}
+.show-all p{
+	font-size: 18px;
+	margin-left: 50px;
+	cursor: pointer;
+}

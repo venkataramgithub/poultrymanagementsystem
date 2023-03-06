@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>poultry management system</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+	<section class="container">
+		<a routerLink="/navbar/wastages">AddWastages</a>
+		<div class="table-form">
+			<table>
+				<thead>
+				<tr>
+					<th>Chicken</th>
+					<th>Egg</th>
+					<th>Date</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let wastage of wastages$">
+						<td>{{wastage.chicken}}</td>
+						<td>{{wastage.egg}}</td>
+						<td>{{wastage.date | date:'fullDate'}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+</body>
+</html>
+<router-outlet></router-outlet>

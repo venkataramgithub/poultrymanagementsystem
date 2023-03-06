@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>poultry management system</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+	<section class="container">
+		<div class="header">
+			<h2>Poultry <i>Management System</i></h2>
+		</div>
+	</section>
+	<section class="container1">
+		<div class="navbar">
+			<ul>
+				<li><i class="fas fa-home"></i><a routerLink="/navbar/dashboard">Dashboard</a></li>
+				<li><i class="fas fa-cart-arrow-down"></i><a routerLink="/navbar/sdetails">Sales</a></li>
+				<li><i class="fas fa-user"></i><a routerLink="/navbar/pdetails">Customer</a></li>
+				<li><i class="fas fa-egg"></i><a routerLink="/navbar/addeggs">Egg Records</a></li>
+				<li><i class="fas fa-list"></i><a routerLink="/navbar/expense">Expense Records</a></li>
+				<li><i class="fas fa-list"></i><a routerLink="/navbar/wastagestable">Wastage Records</a></li>
+				<li><i class="fas fa-users"></i><a routerLink="/navbar/staffmanagement">Staff Management</a></li>
+				<li><i class="fas fa-credit-card" aria-hidden="true"></i><a routerLink="/navbar/price">Daily Prices</a></li>
+			</ul>
+		</div>
+		<div class="route-link">
+			<router-outlet></router-outlet>
+		</div>
+	</section>
+</body>

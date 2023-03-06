@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>poultry management system</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+	<section class="container">
+		<a routerLink="/navbar/sperson">Add Customer</a>
+		<div class="workers-form">
+			<p>Add Sales Details</p>
+			<form method="post" [formGroup]="formdata" (ngSubmit)="addsdetails(formdata.value)">
+				<div class="form-group">
+					<label>SalesPersonId</label>
+					<input type="text" name="sdid" formControlName="sdid" autocomplete="off" required>
+				</div>
+				<div class="form-group">
+					<label>Item Name</label>
+					<input type="text" name="itemname" formControlName="itemname" autocomplete="off" required>
+				</div>
+				<div class="form-group">
+					<label>Quantity</label>
+					<input type="text" name="quantity" formControlName="quantity" autocomplete="off" required>
+				</div>
+				<div class="form-group">
+					<label>Amount</label>
+					<input type="text" name="cost" formControlName="cost" autocomplete="off" required>
+				</div>
+				<div class="form-group">
+					<label>Date</label>
+					<input type="date" class="dateinput" name="date" formControlName="date" autocomplete="off" required>
+				</div>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</section>
+</body>
+</html>

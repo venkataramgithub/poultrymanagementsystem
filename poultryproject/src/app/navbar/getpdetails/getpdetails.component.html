@@ -1,0 +1,31 @@
+<body>
+	<section class="container">
+		<a routerLink="/navbar/dashboard">&times;</a>
+		<form method="post" [formGroup]="formdata" (ngSubmit)="searchform(formdata.value)">
+			<input type="search" name="pdetailssearch" formControlName="pdetailssearch" placeholder="Search here ....">
+			<button><i class="fas fa-search"></i></button>
+		</form>
+		<div class="table-form">
+			<table>
+				<thead>
+				<tr>
+					<th>Pruchase ID</th>
+					<th>Item Name</th>
+					<th>Quantity</th>
+					<th>Amount</th>
+					<th>Date</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let pdetail of pdetails$">
+						<td>{{pdetail.pdid}}</td>
+						<td>{{pdetail.itemname}}</td>
+						<td>{{pdetail.quantity}}</td>
+						<td>{{pdetail.cost}}</td>
+						<td>{{pdetail.date | date:'fullDate'}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+</body>

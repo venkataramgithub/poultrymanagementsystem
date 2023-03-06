@@ -1,0 +1,21 @@
+<body>
+	<i class="fas fa-egg"></i>
+	<section class="container">
+		<div class="workers-form">
+			<h2>Add Daily Prices</h2>
+			<form method="post" [formGroup]="formdata" (ngSubmit)="addeggs(formdata.value)">
+				<div class="flex">
+					<div class="form-group">
+						<label>Date</label>
+						<input type="date" name="date" formControlName="date" autocomplete="off" required>
+					</div>
+					<div class="form-group">
+						<label>Egg Production Count</label>
+						<input type="text" name="eggcount" formControlName="eggcount" autocomplete="off" required>
+					</div>
+				</div>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</section>
+</body>

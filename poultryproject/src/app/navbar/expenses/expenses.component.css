@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+.container{
+  background-image:linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url("../../../assets/ex.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:550px;
+  padding-bottom: 30px;
+  overflow-x: hidden;
+  padding-top: 30px;
+  align-content: center;
+  align-items: center;
+  padding-left: 250px;
+}
+.workers-form{
+  padding:30px;
+  border:1px solid rgba(0, 0, 0,0.2);
+  border-radius: 5px;
+  background-color: white;
+  height: 450px;
+  width: fit-content;
+  border-top:5px solid #14abac;
+}
+p{
+  color:#14abac;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+form{
+  margin:20px 0px;
+}
+form .form-group{
+  display: flex;
+  flex-direction: column;
+  margin:15px 2px;
+}
+.form-group label{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.form-group input{
+  width: 100%;
+  height: 30px;
+  padding:5px;
+  font-size: 18px;
+  border:1px solid rgba(0, 0, 0,0.3);
+  border-radius: 3px;
+  outline: none;
+}
+.form-group input:focus{
+  box-shadow: 0px 0px 1em -0.3em #14abac;
+}
+button {
+  background:#14abac;
+  color:white;
+  border:1px solid rgba(0, 0, 0,0.3);
+  font: inherit;
+  border-radius:1px;
+  line-height: 1;
+  margin:20px 6em;
+  font-size: 18px;
+  padding:10px 50px;
+  outline: none;
+}
+button:hover,button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #14abac;
+  font-weight: bold;
+}

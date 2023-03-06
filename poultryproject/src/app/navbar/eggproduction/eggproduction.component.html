@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>poultry management system</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+	<section class="container">
+		<a routerLink="/navbar/dashboard">&times;</a>
+		<form method="post" [formGroup]="formdata" (ngSubmit)="searchform(formdata.value)">
+			<input type="search" name="spersonsearch" formControlName="spersonsearch" placeholder="Search here ....">
+			<button><i class="fas fa-search"></i></button>
+		</form>
+		<div class="table-form">
+			<table>
+				<thead>
+					<tr>
+						<th>Sl.No</th>
+						<th>Date</th>
+						<th>Egg Count</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let sdetail of eggproduction$">
+						<td>{{sdetail.id}}</td>
+						<td>{{sdetail.date | date:'fullDate'}}</td>
+						<td>{{sdetail.eggcount}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<body>
+	<form method="post" [formGroup]="formdata" (ngSubmit)="searchform(formdata.value)">
+		<input type="search" name="ppersonsearch" formControlName="ppersonsearch" placeholder="Search here ....">
+		<button><i class="fas fa-search"></i></button>
+	</form>
+	<table>
+		<thead>
+		<tr>
+			<th>Sl.No</th>
+			<th>Name</th>
+			<th>Phone</th>
+			<th>State</th>
+			<th>Address</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let pperson of ppersons$">
+				<td>{{pperson.pid}}</td>
+				<td>{{pperson.name}}</td>
+				<td>{{pperson.phone}}</td>
+				<td>{{pperson.state}}</td>
+				<td>{{pperson.address}}</td>
+			</tr>
+		</tbody>
+	</table>
+</body>

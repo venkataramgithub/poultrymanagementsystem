@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>poultry management system</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+	<section class="container">
+		<a routerLink="/navbar/dashboard">&times;</a>
+		<form method="post" [formGroup]="formdata" (ngSubmit)="searchform(formdata.value)">
+			<input type="search" name="spersonsearch" formControlName="spersonsearch" placeholder="Search here ....">
+			<button><i class="fas fa-search"></i></button>
+		</form>
+		<div class="table-form">
+			<table>
+				<thead>
+				<tr>
+					<th>Sales ID</th>
+					<th>Name</th>
+					<th>State</th>
+					<th>Phone</th>
+					<th>Address</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let sperson of spersons$">
+						<td>{{sperson.sid}}</td>
+						<td>{{sperson.name}}</td>
+						<td>{{sperson.state}}</td>
+						<td>{{sperson.phone}}</td>
+						<td>{{sperson.address}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+</body>
+</html>
